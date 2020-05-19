@@ -6,7 +6,7 @@ source "http://rubygems.org"
 gemspec
 
 # jquery-rails is used by the dummy application
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.0.1"
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
@@ -16,8 +16,8 @@ gem "jquery-rails"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 #
-gem 'twitter-bootstrap-rails'
-gem "paperclip", "~> 2.4"
+gem 'twitter-bootstrap-rails', '>= 2.1.1'
+gem "paperclip", "~> 2.7", ">= 2.7.0"
 gem "mocha", :group => :test
 
 group :development do
@@ -26,5 +26,5 @@ group :development do
 end
 
 group :test do
-  gem 'factory_girl_rails', "~> 1.1.0"
+  gem 'factory_girl_rails', '~> 1.1.0'
 end
